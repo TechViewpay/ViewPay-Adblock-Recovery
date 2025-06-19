@@ -21,17 +21,17 @@ Ajoutez simplement **un seul script** à votre page :
 
 | Paramètre | Obligatoire | Description | Exemple |
 |-----------|-------------|-------------|---------|
-| `site_id` | **Oui** | Votre identifiant de site ViewPay | `site_id=1234` |
-| `pub_id` | **Oui** | Votre identifiant éditeur Google AdSense | `pub_id=5678` ou `pub_id=pub-5678` |
+| `site_id` | **Oui** | Votre identifiant de site ViewPay | `site_id=1234567890` |
 | `video_duration` | Non | Durée de la session sans Adblock Recovery en secondes | `video_duration=1800` (30 min) |
 | `debug_mode` | Non | Activer les logs de la console | `debug_mode=true` |
+| `hide_close` | Non | Activer l'option pour cacher la croix quand une publicité est disponible | `hide_close=false` |
 
 ### Notes sur les paramètres
 
 - **site_id** : Fourni par ViewPay lors de la configuration de votre compte
-- **pub_id** : Peut être fourni avec ou sans le préfixe "pub-" (ajouté automatiquement si nécessaire)
 - **video_duration** : Valeur par défaut de 60 secondes. Valeurs < 10000 considérées comme des secondes, sinon millisecondes
-- **debug_mode** : Valeur par défaut `true`. À désactiver en production (`debug_mode=false`)
+- **debug_mode** : Valeur par défaut `false`. Les valeurs acceptées sont `true|false` ou `1|0`. À désactiver en production (`debug_mode=false`)
+- **hide_close** : Valeur par défaut `true`. Les valeurs acceptées sont `true|false`ou `1|0`
 
 ## Comment ça fonctionne
 
